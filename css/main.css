@@ -1,0 +1,716 @@
+/* RESET CSS ////////////////////////////////////////// */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+img{
+    width: 100%;
+}
+*:focus{
+    outline: 0
+}
+/* FONTS /////////////////////////////////////////////// */
+
+/* app font */
+
+@font-face {
+    font-family: "AppFontHeader";
+    src: url(fonts/COPRGTB.ttf)
+}
+@font-face {
+    font-family: "AppFontBody";
+    src: url(fonts/OpenSans-Regular.ttf)
+}
+
+@font-face {
+    font-family: "appHeader";
+    src: url(fonts/OpenSans-Bold.ttf)
+}
+/* restaurant 1 fonts */
+@font-face {
+    font-family: "Rest1FontTitle";
+    src: url(fonts/calibrib.ttf);
+}
+
+@font-face {
+    font-family: "Rest1FontBody";
+    src: url(fonts/calibri.ttf);
+}
+
+/* restaurant 2 fonts */
+@font-face {
+    font-family: "Rest2FontHome";
+    src: url(fonts/Candara.ttf);
+}
+/* restaurant 3 fonts */
+@font-face {
+    font-family: "Rest3FontHome";
+    src: url(fonts/OpenSans-Regular.ttf);
+}
+/* specials Font */
+@font-face {
+    font-family: "specialsFont";
+    src: url(fonts/BRLNSR.ttf);
+}
+/* reservation font */
+@font-face {
+    font-family: "ReservationFont";
+    src: url(fonts/framd.ttf);
+}
+
+/* GENRAL APP STYLES /////////////////////////////////// */
+
+body {
+    font-size: 14px;
+    overflow: hidden;
+}
+
+main {
+    position: absolute;
+    width: 375px;
+    height: 667px;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+header {
+    width: 375px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    padding: 15px;
+    color:#fff;
+}
+.rest header{
+    width: 375px;
+    height: 60px;
+}
+section {
+    position: absolute;
+    top: 100px;
+    width: 375px;
+    height: 507px;
+    background: #FFF;
+    overflow: auto;
+}
+.rest section{
+    top:60px !important;
+    height: 572px;
+    width: 375px;
+}
+
+footer {
+    width: 375px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+}
+
+/* SPLASH SCREEN ////////////////////////////////////////// */
+
+#splash {
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+}
+
+#splash img {
+    position: absolute;
+    width: 209.5px;
+    height: auto;
+    margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+/* LANDING SCREEN ///////////////////////////////////////// */
+
+#landing {
+    font-family: "appHeader", sans-serif;
+    padding-top: 103px;
+    background-size: cover;
+    background-image: url(../images/landing_bg.jpg);
+    cursor: pointer;
+}
+
+#landing header {
+    border-bottom: solid 7px #655300;
+    background-color: #fde100;
+    height: 103px;
+    padding: 20px;
+}
+#landing header h3{
+    font-family: "AppFontTitle", sans-serif;
+    float: left;
+    color: #663200;
+    font-size: 27px;
+}
+
+#landing header img {
+    width: 60px;
+    height: auto;
+    position: absolute;
+    float: left;
+    margin-left: 90px;
+}
+#landing p{
+    padding-top: 80px;
+    color: #000;
+    font-size: 18px;
+}
+
+
+.landingLogos {
+    text-align: center;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    border-radius: 50%;
+    width: 135px;
+    height: 135px;
+    position:absolute;
+    float: left;
+    margin-left: 20px;
+    
+}
+.logos {
+    margin-top: 40px;
+    
+}
+
+#logo1{
+    background-color: #fff000;
+}
+.logo01{
+    width: 123px;
+    height: 58px;
+}
+#logo2{
+    background-color: #f15a29;
+    margin-top: 180px;
+}
+.logo02{
+    width: 123px;
+    height: 60px;
+}
+#logo3{
+    background-color: #acd373;
+    margin-top: 340px;
+}
+.logo03{
+    width: 100px;
+    height: 60px;
+}
+
+#landing1 p, #landing2 p, #landing3 p{
+    font-family: "AppFontBody";
+    font-size: 19px;
+    width: 250px;
+    height: 50px;
+    color: #fff;
+    background-color: rgba(101,83,0,0.5);
+    border-radius: 15px;
+    float: right;
+    margin-right: 20px;
+    padding-top: 12px;
+}
+#landing1 p{
+    margin-top: 70px;
+    padding-left: 85px;
+}
+#landing2 p{
+    margin-top: 110px;
+    padding-left: 60px;
+}
+#landing3 p{
+    margin-top: 105px;    
+    padding-left: 70px;
+}
+#diningText p{
+    margin-top: 310px;
+}
+
+#landing footer {
+    height: 50px;
+    background: #fde100;
+    border-top: solid 3px #884000;
+    background-size: cover;
+}
+
+/* MENU ////////////////////////////////////////////// */
+#menu{
+    font-family: "appHeader", sans-serif;
+    background-color: rgb(184, 175, 50);
+    color: #000;
+    text-align: center;
+}
+
+#menu header {
+    border-bottom: solid 3px #000;
+    background-color: #fde100;
+    height: 160px;
+}
+#menu h3{
+    color: #000;
+    font-size: 25px;
+    text-align: center;
+    padding-left: 60px;
+    margin-bottom: 15px;
+}
+#menu span{
+    font-family: "AppFontTitle", sans-serif;
+    float: left;
+    color: #111 !important;
+    font-size: 20px;
+    padding-left: 60px;
+    border-bottom: solid 1px #282828;
+    line-height: 4;
+    width: 100%;
+    /*background-color: rgba(0,0,0,0.2)*/
+}
+#menu span:hover{
+    background-color: rgba(138, 113, 2, 0.5);
+    color: #fff !important;
+}
+
+#menu img {
+    width: 80px;
+    height: auto;
+    position: relative;
+    margin-left: 80px;
+    margin-top: 10px;
+    padding: 0px !important;
+}
+.menuBtn{
+    margin-top: 160px;
+    margin-bottom: 5px;
+    font-size: 15px;
+
+}
+/* SHARED RESTAURANT /////////////////////////////////// */
+
+/* header/footer */
+
+header h2{
+    font-family: "AppFontHeader";
+    font-size: 25px;
+    float: left;
+}
+.hamburger{
+    margin-left: 180px;
+    width: 27px;
+}
+
+footer div {
+    float: left;
+    text-align: center;
+    overflow: auto;
+    font-size: 12px;
+    padding: 7.2px 10px;
+    color: #FFF;
+    margin-left: 50px;
+}
+
+footer img {
+    height: 18px;
+    width: auto;
+    text-align: center;
+}
+.reservationsIcon{
+    margin-left: 40px;
+}
+
+.aboutInfo br{
+    line-height: 1.7;
+}
+/* general section */
+.sectionContainer {
+    overflow: auto;
+    color: #000;
+}
+
+/* about section */
+.aboutImg{
+    width: 100%;
+    height: 211px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.aboutlogos{
+    width: 45%;
+    margin-left: 180px;
+    margin-top: 15px;
+    float: left;
+}
+#location p{
+    line-height: 1.4;
+    margin-top: 10px;
+}
+
+#location{
+    width: 55%;
+    overflow: auto;
+    position: absolute;
+}
+
+.about p{
+    font-size: 16px;
+    margin: 15px 15px 30px 15px;
+    line-height: 1.2;
+}
+#aboutInfo{
+    overflow: auto;
+}
+.aboutInfo p{
+    padding: 10px 15px;
+    border: dashed 1px #999;
+}
+/*About middle line*/
+.aboutInfo h3 {
+    margin-top: 160px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 5px;
+}
+/*Open now Span*/
+.about span{
+    font-size: 20px;
+}
+#rest1 .about span{
+    font-family: "Rest1FontTitle";
+    color:#17ab9f;
+    border-bottom: dotted 1px #17ab9f;
+}
+#rest2 .about span{
+    font-family: "Rest2FontHome";
+    color: #f15a29;
+    border-bottom: dotted 1px #f15a29;
+    font-weight: bolder;
+}
+#rest3 .about span{
+    font-family: "Rest3FontHome";
+    color: #42c800;
+    border-bottom: dotted 1px #42c800;
+    font-weight: bolder;
+}
+.rating{ 
+    width: 75px;
+    height: 15px;
+    margin: 10px 5px 0px 0px;
+}
+#rest2 .rating{
+    width: 70px;
+    margin: 10px 5px 0 -5px;
+}
+#rest2 .aboutlogos{
+    width: 40%;
+    margin-left: 200px;
+}
+#rest2 #location p{
+    line-height: 1.5;
+}
+/* general specials/reservations */
+
+.reservations{
+    font-family: "ReservationFont";
+}
+.specials{
+    font-family: "specialsFont";
+}
+.specials h4, .menu p, .specials h2{
+    font-family: "specialsFont";
+    float: left;
+}
+/*top heading*/
+.specials h3, .reservations h3{
+    height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-family: "AppFontBody", sans-serif;
+    text-transform: uppercase;
+    padding: 5px;
+}
+/*price*/
+.specials h2{
+    font-weight: bold;
+    width: 20%;
+    text-align: right;
+    font-size: 30px;
+    padding: 5px 15px 0px 0px;
+}
+
+/*meal name*/
+.specials h4{
+    font-size: 23px;
+    width: 80%;
+    padding: 10px 15px 5px 15px;
+    text-transform: capitalize;
+    
+}
+/*meal description*/
+.specials p{
+    width: 80%;
+    color: #676767;
+    padding: 10px 15px 30px 15px;
+    font-size: 15px;
+}
+.specials p:last-child{
+    padding-bottom: 40px;
+}
+
+/* reservations section */
+/*phone #*/
+
+form{
+    width: 100%;
+    padding: 15px;
+    font-family: "ReservationFont";
+}
+.reservations h2{
+    text-align: center;
+    padding: 5px;
+}
+label{
+    width: 20%;
+    float:left;
+    margin: 12px 0 0 0;
+    color: #000;
+    padding: 5px;
+}
+.requestlabel{
+    width: 30% !important;
+}
+/*input areas*/
+input, textarea, select{
+    width: 70%;
+    padding: 5px;   
+    float:left;
+    margin: 10px 0 ;
+    border-radius: 5px;
+    color:#555;
+    background: #fff;
+}
+label{
+    width: 20%;
+}
+
+/*reservation button*/
+.reserve{
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.icons{
+    width: 10%;
+    float: left;
+    height: 30px;
+    padding: 10px 5px 0 5px;
+}
+.hotline{
+    color: #000 !important;
+}
+.sweet-alert{
+    font-family: "AppFontBody";
+}
+.sweet-alert p{
+    margin: 10px;
+}
+.sweet-alert button{
+    width: 100px;
+    height: 25px;
+    margin: 10px;
+    border: inherit;
+    color: #fff;
+    text-transform: capitalize;
+}
+.sweet-alert button #rest1 {
+    width: 100px;
+    height: 25px;
+    margin: 10px;
+    border: inherit;
+    color: #fff;
+    text-transform: capitalize;
+    background-color: red;
+}
+/* RESTAURANT 1 ////////////////////////////////////// */
+
+/* general */
+#rest1 {
+    font-family: "Rest1FontBody", sans-serif;
+}
+
+/* general section */
+
+#rest1 .sectionContainer {
+    border-bottom-color: #342000;
+    background-color: #fff;
+}
+
+/* header/footer */
+#rest1 header, #rest1 footer {
+    background: #6a1510;
+    color: #FFF;
+}
+/*about section*/
+#rest1 .aboutInfo h3{
+    background-color: #c24038;
+}
+/*top heading*/
+#rest1 .specials h3, #rest1 .reservations h3{
+    background-color:#c24038;
+}
+/* specials section */
+#rest1 h4, #rest1 .specials h2{
+    color: #00b0b6;
+}
+#rest1 input, #rest1 textarea, #rest1 select{
+    border: dotted 1px #c24038;
+}
+#rest1 input:focus, #rest1 select:focus, #rest1 textarea:focus {
+    outline: 0;
+    background: rgba(252, 104, 95, 0.05);
+}
+#rest1 .reserve {
+    background-color: #990900;
+}
+#rest1 .reserve:hover {
+    background-color: #c24038;
+}
+#rest1 .reservations h2{
+    color: #c24038;
+}
+/* footer subnav */
+
+
+
+
+/* RESTAURANT 2////////////////////////////////////// */
+#rest2 header, #rest2 footer {
+    background: #ff3e00;
+}
+#rest2 .about{
+    font-family: "Rest2FontHome";
+    /*font-size: 12px;*/
+}
+#rest2 .aboutInfo h3 {
+    background-color: #f15a29;
+}
+#rest2 .hamburger{
+    margin-left: 180px;
+}
+/*specials section*/
+#rest2 .specials h3, #rest2 .reservations h3{
+    background-color:#ff6600;
+}
+#rest2 h4, #rest2 .specials h2{
+    color: #ff0000;
+}
+/*reservation inputs*/
+#rest2 input, #rest2 textarea, #rest2 select{
+    border: dotted 1px #ff3e00;
+}
+#rest2 input:focus, #rest2 select:focus, #rest2 textarea:focus {
+    outline: 0;
+    background: rgba(255, 102, 0, 0.05);
+}
+#rest2 .reserve {
+    background-color: #ff6600;
+}
+#rest2 .reserve:hover {
+    background-color: #ff3e00;
+}
+
+#rest2 .reservations h2{
+    color: #ff3e00;
+}
+/* RESTAURANT 3////////////////////////////////////// */
+#rest3 header, #rest3 footer {
+    background: #00a651;
+}
+#rest3 .about{
+    font-family: "Rest3FontHome";
+    font-size: 12px;
+}
+#rest3 .aboutInfo h3 {
+    background-color: #00803e;
+}
+#rest3 .hamburger{
+    margin-left: 155px;
+    width: 27px;
+}
+#rest3 #location p{
+    font-size: 15px;
+    line-height: 1.55
+}
+.fvlogo{
+    width: 90%;
+    padding-left: 30px;
+}
+#rest3 .rating{
+    width: 70px;
+    height: 14px;
+    margin: 10px 5px 0px 10px;
+}
+
+/*specials section*/
+#rest3 .specials h3, #rest3 .reservations h3{
+    background-color:#00803e;
+}
+#rest3 h4, #rest3 .specials h2{
+    color: #017d3e;
+}
+/*reservation inputs*/
+#rest3 input, #rest3 textarea, #rest3 select{
+    border: dotted 1px #42c800;
+}
+#rest3 input:focus, #rest3 select:focus, #rest3 textarea:focus {
+    outline: 0;
+    background: rgba(66, 200, 0, 0.05);
+}
+#rest3 .reserve {
+    background-color: #42c800;
+}
+#rest3 .reserve:hover {
+    background-color: #00a651;
+}
+#rest3 .reservations h2{
+    color: #42c800;
+}
+/*sweet alert style*/
+.sweet-alert .sa-icon.sa-info::before, .sweet-alert .sa-icon.sa-info::after, .sweet-alert .sa-icon.sa-success .sa-line{
+    background-color: #FFCC00  !important;
+}
+.sweet-alert .sa-icon.sa-success .sa-placeholder{
+    border: 4px solid #FFCC00 !important;
+    box-shadow: none !important;
+}
+.sweet-alert .sa-icon.sa-info, .sweet-alert .sa-icon.sa-success{
+     border-color: #FFCC00 !important;
+}
+
+.sweet-alert .btn-success:focus, .sweet-alert .btn-info:focus{
+    border-color: none !important;
+    outline: 0;
+}
+
+.sweet-alert button{
+    background-color: #FFCC00 !important;
+    color: #000 !important;
+    font-size: 100%;
+}
+
+
+
+

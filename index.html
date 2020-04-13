@@ -1,0 +1,552 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    
+    <!-- meta tag to make sure content is same width as device and not scalable -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <title>Family of Eateries | Ceviche | Crispy's | Five Vines</title>
+    
+    <!-- link to css files -->
+    
+    <link rel="stylesheet" href="css/sweetalert.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    
+    <!-- link to js files -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+    
+</head>
+
+<body>
+    <!-- INTRO -->
+    <main id="menu">
+        <header>
+            <img src="images/icons/app_icon.svg" alt="Family of Eateries" />
+            <h3>FAMILY OF EATERIES</h3>
+        </header>
+        <div id="backToLanding" class="menuBtn"><span>Select a New Restaurant</span></div>
+        <div id="contact" class="menuBtn"><span>Contact Family of Eateries</span></div>
+        <div id="aboutApp" class="menuBtn"><span>About Family of Eateries</span></div>
+    </main>
+    
+    <!-- SPLASH SCREEN -->
+    <main id="splash">
+        <img src="images/app_gif.gif" alt="Family of Eateries" />
+        <footer></footer>
+    </main>
+    
+    <!-- LANDNG SCREEN -->
+    <main id="landing">
+        <header>
+            <h3>SELECT A<BR/>RESTAURANT</h3>
+            <img src="images/icons/app_icon.svg" alt="Family of Eateries" />
+        </header>
+        
+        <div id="landing1">
+        <p>FINE DINING</p>
+        <div id="logo1" class="landingLogos">
+            <img class ="logo01 logos" src="images/logos/ceviche_logo.svg" alt="Ceviche" />
+        </div>
+        </div>
+        
+        <div id="landing2">
+        <p>FAST FOOD DINING</p>
+        <div id="logo2" class="landingLogos">
+            <img class ="logo02 logos" src="images/logos/crispys_logo.svg" alt="Crispy" />
+            </div>
+        </div>
+        
+        <div id="landing3">
+        <p>CASUAL DINING</p>
+        <div id="logo3" class="landingLogos">
+            <img class ="logo03 logos" src="images/logos/five_vines_logo.svg" alt="Five Wine" />
+        </div>
+        </div>
+        <footer></footer>
+    </main>
+    
+    <!-- RESTAURANT 1 -->
+    <main id="rest1" class="rest">
+        <!-- header -->
+        <header>
+            <h2>CEVICHE</h2>
+            <img class="hamburger" data-click-state="1" src="images/hamburger.gif"alt="Menu" />
+        </header>
+        
+        <!-- home -->
+        <section class="about">
+            <div class="sectionContainer reveal">
+                <div class= "aboutImg reveal">
+                    <img class ="aboutImg" src="images/rest/ceviche_about.jpg" alt="about"/>
+                </div>    
+                <div id="location">
+                    <p class="reveal"><span>Open Now</span><br/>
+                    <strong>10am - 10pm</strong><br/>
+                    1746 Queen St W<br/>
+                    Toronto, ON M6R 1B3<br/>
+                    (905) 436-1234</p>
+                </div>
+                <div class="aboutlogos reveal">
+                    <img class="reveal" src="images/logos/ceviche_logo.svg" />
+                    
+                    <img class="rating reveal" src="images/ceviche_ratings.png"/>
+                    <a class="reveal">105 reviews</a>
+                </div>
+                
+                <div class= "aboutInfo reveal">
+                    <h3>About Ceviche</h3>
+                    <p>Restaurant Ceviche opened its doors in January 2006, and in 2010 won the second star in the Michelin Guide.<br/>
+                    Ceviche is much more than chef Muñoz Izquierdo’s gastronomic vision for Barcelona. It is a spiritual project with the very best team of professionals at its forefront that strives to delight its diners with every aroma and ﬂavour.<br/>
+                    Allow yourselves to be enticed by our selection of hors d’œuvres to whet your appetite. We hope they will be an excellent prelude to a delicious meal and a wonderful overall dining experience.
+                    </p>
+                </div>
+                </div>            
+        </section>
+        
+        <!-- menu -->
+        <section class="specials">
+            <h3>Specials</h3>
+            <img class="reveal" src="images/rest/ceviche_specials_img01.jpg" alt="Ceviche Specials Meal 01"/>
+            <h4 class="reveal">Shrimp Scampi</h4>
+            <h2 class="reveal">$10</h2>
+            <p class="reveal">Jumbo shrimp sauteed in white wine, butter &amp; garlic.</p>
+                
+            <img class="reveal" src="images/rest/ceviche_specials_img02.jpg" alt="Ceviche Specials Meal 02"/>
+            <h4>Hors D'oeuvres</h4>
+            <h2 class="reveal">$12</h2>
+            <p class="reveal">Selection of Tortilla Pinwheels, Meatballs, Mini Sliders,...</p>
+                
+            <img class="reveal" src="images/rest/ceviche_specials_img03.jpg" alt="Ceviche Specials Meal 03"/>
+            <h4 class="reveal">Classic Caesar</h4>
+            <h2 class="reveal">$7</h2>
+            <p class="reveal">Crisp romaine lettuce, house-made parmesan croutons with shredded parmesan cheese</p>
+                
+            <img class="reveal" src="images/rest/ceviche_specials_img04.jpg" alt="Ceviche Specials Meal 04"/>
+            <h4 class="reveal">New Orleans Bouillabaisse</h4>
+            <h2 class="reveal">$15</h2>
+            <p class="reveal">An incredibly delicious saffron &amp; wine-laced seafood stew only at Ceviche.</p>
+        </section>
+        
+        <!-- reservations -->
+        <section class="reservations">
+            <h3>Reservations</h3>
+            <h2 class="reveal hotline">(905) 436-1234</h2>
+            <img class="reveal" src="images/rest/ceviche_reservation.jpg" alt="Ceviche Reservation "/>
+            <h2 class="reveal">Online Reservations </h2>
+            
+            <form class= "reveal">
+                <p>* required</p>
+                <p>
+                    <img class="icons" src="images/icons/name_icon.svg" alt="phone icon"/>
+                    <label for="name">Name<span>*</span></label>
+                    <input id="name"  name="name" placeholder="First and Last name" type="text"/>
+                </p>
+
+                <p>
+                    <img class="icons" src="images/icons/phone_icon.svg" alt="phone icon"/>
+                    <label for="phone">Phone<span>*</span></label>
+                    <input id="phone"  name="phone" placeholder="(123) 345-6789" type="tel"/>
+                </p>
+
+                <p>
+                    <img class="icons" src="images/icons/date_icon.svg" alt="date icon"/>
+                    <label for="date">Date<span>*</span></label>
+                    <input id="date"  name="date" placeholder="yyyy-mm-dd" type="date"/>
+                </p>
+
+                <p>
+                    <img class="icons" src="images/icons/time_icon.svg" alt="time icon"/>
+                    <label for="time">Time<span>*</span></label>
+                    <select id="time" name="time">
+                            <option>Selection a time...</option>
+                            <option value="12:00 pm">12:00 pm</option>
+                            <option value="1:00 pm">1:00 pm</option>
+                            <option value="2:00 pm">2:00 pm</option>
+                            <option value="3:00 pm">3:00 pm</option>
+                            <option value="4:00 pm">4:00 pm</option>
+                            <option value="5:00 pm">5:00 pm</option>
+                            <option value="6:00 pm">6:00 pm</option>
+                            <option value="7:00 pm">7:00 pm</option>
+                            <option value="8:00 pm">8:00 pm</option>
+                            <option value="9:00 pm">9:00 pm</option>
+                    </select>
+
+                </p>
+                <p>
+                    <img class="icons" src="images/icons/people_icon.svg" alt="guests icon"/>
+                    <label for="guests">Guests<span>*</span></label>
+                    <select id="guests" name="guests">
+                        <option>Select the number of guests...</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value ="other">other</option>
+                    </select>
+                </p>
+                <p>
+                    <img class="icons" src="images/icons/email_icon.svg" alt="email icon"/>
+                    <label>Email</label>
+                    <input id="email" name="email" placeholder="email@gmail.com" type="email">
+                </p>
+
+                <p>
+                    <label class="requestlabel">Special Resquests</label>
+                    <textarea id="requests" name="requests" rows="4"></textarea> 
+                </p>
+
+                
+                <button class="reserve reveal" id="submit">Make a reservation</button>
+            </form>
+        </section>
+        
+        <!-- footer -->
+        <footer>
+            <div class="aboutIcon" data-section=".about">
+                <img src="images/icons/about_icon.svg" alt="about" />
+                <p>About</p>
+            </div>
+            <div class="specialsIcon" data-section=".specials">
+                <img src="images/icons/specials_icon.svg" alt="specials" />
+                <p>Specials</p>
+            </div>
+            <div class="reservationsIcon" data-section=".reservations">
+                <img src="images/icons/reservation_icon.svg" alt="reservations" />
+                <p>Reservations</p>
+            </div>
+        </footer>
+    </main>
+    
+    <!-- RESTAURANT 2 -->
+    <main id="rest2" class="rest">
+        <header>
+            <h2>CRISPY'S</h2>
+            <img class="hamburger" data-click-state="1" src="images/hamburger.gif"alt="Menu" />
+        </header>
+        <!--about-->
+        <section class="about">
+            <div class="sectionContainer">
+                <div class= "aboutImg reveal ">
+                    <img class ="aboutImg" src="images/rest/crispys_about.jpg" alt="about"/>
+                </div>    
+                <div id="location" class= "reveal">
+                    <p><span>Open Now</span><br/>
+                    <strong>9am -11pm</strong><br/>
+                    300 King St E #31,
+                    Oshawa, ON L1H 8J4	
+                    (905) 436-1175</p>
+                </div>
+                <div class="aboutlogos reveal">
+                    <img class="reveal"  src="images/logos/crispys_logo_orange.svg" alt="crispy's logo" />
+                    
+                    <img class="rating reveal" src="images/crispys_ratings.png"/>
+                    <a>98 reviews</a>
+                </div>
+                
+                <div class= "aboutInfo reveal">
+                    <h3>About Crispy's</h3>
+                    <p>We have a long history of proudly serving great tasting burgers and traditional diner fare. Much has changed over ﬁfty years, however our recipe remains true and delicious as ever.<br/>
+                    Our grill masters charbroil each burger to perfection on an open-ﬂame grill. Once your burger is in front of you, we let you choose from a selection of fresh toppings to create your perfect burger. Add a delicious side of Crispy’s famous fries or our deep-fried pickles n’ onion rings combo. Your way, your meal, fast.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!--special-->
+        <section class="specials">
+            <h3>Specials</h3>
+            <img class="reveal" src="images/rest/crispys_specials_img01.jpg" alt="Crispy's Specials Meal 01"/>
+            <h4 class="reveal">Make any a combo for </h4>
+            <h2 class="reveal">$3.99</h2>
+            <p class="reveal">Combo includes regular size fresh cut fries &amp; regular size drink</p>
+
+            <img class="reveal" src="images/rest/crispys_specials_img02.jpg" alt="Crispy's Specials Meal 02"/>
+            <h4>California Burger</h4>
+            <h2 class="reveal">$7.45</h2>
+            <p class="reveal">Combo includes regular size fresh cut fries &amp; regular size drink</p>
+
+            <img class="reveal" src="images/rest/ceviche_specials_img03.jpg" alt="Crispy's Specials Meal 03"/>
+            <h4 class="reveal">Streetside BLT</h4>
+            <h2 class="reveal">$4.95</h2>
+            <p class="reveal">All natural kosher dog, chopped onion, mustard, Heinz ketchup, on a poppy seed bun.</p>
+
+            <img class="reveal" src="images/rest/crispys_specials_img04.jpg" alt="Crispy's Specials Meal 04"/>
+            <h4 class="reveal">Chicago Dog</h4>
+            <h2 class="reveal">$4.99</h2>
+            <p class="reveal">Fesh diced Kosher pickle spear, sliced tomato, relish, celery salt, mustard, on a poppy seed bun. </p>
+        </section>
+        
+        <!--reservation-->
+        <section class="reservations">
+            <h3>Reservations</h3>
+            <h2 class="reveal hotline">(905) 436-1175</h2>
+            <img class="reveal" src="images/rest/crispys_reservation.jpg" alt="Crispy's Reservation "/>
+            <h2 class="reveal">Online Reservations </h2>
+            
+            <form class="reveal">
+                <p>* required</p>
+                <p>
+                    <img class="icons" src="images/icons/name_icon.svg" alt="phone icon"/>
+                    <label for="name">Name<span>*</span></label>
+                    <input id="name"  name="name" placeholder="First and Last name" type="text"/>
+                </p>    
+
+                <p>
+                    <img class="icons" src="images/icons/phone_icon.svg" alt="phone icon"/>
+                    <label for="phone">Phone<span>*</span></label>
+                    <input id="phone"  name="phone" placeholder="(123) 345-6789" type="tel"/>
+                </p>
+
+                <p>
+                    <img class="icons" src="images/icons/date_icon.svg" alt="date icon"/>
+                    <label for="date">Date<span>*</span></label>
+                    <input id="date"  name="date" placeholder="yyyy-mm-dd" type="date"/>
+                </p>
+
+                <p>
+                    <img class="icons" src="images/icons/time_icon.svg" alt="time icon"/>
+                    <label for="time">Time<span>*</span></label>
+                    <select id="time" name="time">
+                            <option>Selection a time...</option>
+                            <option value="12:00 pm">12:00 pm</option>
+                            <option value="1:00 pm">1:00 pm</option>
+                            <option value="2:00 pm">2:00 pm</option>
+                            <option value="3:00 pm">3:00 pm</option>
+                            <option value="4:00 pm">4:00 pm</option>
+                            <option value="5:00 pm">5:00 pm</option>
+                            <option value="6:00 pm">6:00 pm</option>
+                            <option value="7:00 pm">7:00 pm</option>
+                            <option value="8:00 pm">8:00 pm</option>
+                            <option value="9:00 pm">9:00 pm</option>
+                    </select>
+
+                </p>
+                <p>
+                    <img class="icons" src="images/icons/people_icon.svg" alt="guests icon"/>
+                    <label for="guests">Guests<span>*</span></label>
+                    <select id="guests" name="guests">
+                        <option>Select the number of guests...</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value ="other">other</option>
+                    </select>
+                </p>
+                <p>
+                    <img class="icons" src="images/icons/email_icon.svg" alt="email icon"/>
+                    <label>Email</label>
+                    <input id="email" name="email" placeholder="email@gmail.com" type="email">
+                </p>
+
+                <p>
+                    <label class="requestlabel">Special Resquests</label>
+                    <textarea id="requests" name="requests" rows="4"></textarea> 
+                </p>
+
+                
+                <button class="reserve reveal" id="submit">Make a reservation</button>
+            </form>
+        </section>
+        <footer>
+            <div class="aboutIcon" data-section=".about">
+                <img src="images/icons/about_icon.svg" alt="about" />
+                <p>About</p>
+            </div>
+            <div class="specialsIcon" data-section=".specials">
+                <img src="images/icons/specials_icon.svg" alt="specials" />
+                <p>Specials</p>
+            </div>
+            <div class="reservationsIcon" data-section=".reservations">
+                <img src="images/icons/reservation_icon.svg" alt="reservations" />
+                <p>Reservations</p>
+            </div>
+            
+        </footer>
+    </main>
+    
+    <!-- RESTAURANT 3 -->
+    <main id="rest3" class="rest">
+        <header>
+            <h2>FIVE VINES</h2>
+            <img class="hamburger" data-click-state="1" src="images/hamburger.gif" alt="Menu" />
+        </header>
+        
+        <!--about-->
+        <section class="about">
+        <div class="sectionContainer">
+                <div class= "aboutImg reveal ">
+                    <img class ="aboutImg" src="images/rest/fv_about.jpg" alt="about"/>
+                </div>    
+                <div id="location" class= "reveal">
+                    <p><span>Open Now</span><br/>
+                    <strong>11am -11pm</strong><br/>
+                    366 Wilson Rd S,<br/>
+                    Oshawa, ON L1H 6C7<br/>
+                    (289) 222-7455</p>
+                </div>
+                <div class="aboutlogos reveal">
+                    <img class="fvlogo reveal" src="images/logos/five_vines_logo.svg" />
+                    
+                    <img class="rating reveal" src="images/fv_ratings.png" alt="five vines rating"/>
+                    <a>100 reviews</a>
+                </div>
+                
+                <div class= "aboutInfo reveal">
+                    <h3>About Five Vines</h3>
+                    <p>Lenore Skwanski, executive chef/co-owner of Five Vines in Portland, Maine, really just sticks with the basics: the New England native and long-time farm-to-table advocate believes that <br/>
+                    “memorable dining is less about the chef in the kitchen and much more about the fresh, seasonal ingredients.”<br/>
+                    In Skwanski’s case, many of those ingredients come courtesy of the restaurant’s own Five Vines Farm, which inspires such seasonal dishes. 
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!--specials-->
+        <section class="specials">
+            <h3>Specials</h3>
+            <img class="reveal" src="images/rest/fv_specials_img01.jpg" alt="crispys meal"/>
+            <h4 class="reveal">Winter Point oysters</h4>
+            <h2 class="reveal">$10</h2>
+            <p class="reveal">with tomato horseradish mignonette.</p>
+
+            <img class="reveal" src="images/rest/fv_specials_img02.jpg" alt="crispys meal"/>
+            <h4>Stoneheart lamb carpaccio</h4>
+            <h2 class="reveal">$15</h2>
+            <p class="reveal"> red sails lettuce with shaved, crunchy fennel and paper-thin.</p>
+
+            <img class="reveal" src="images/rest/fv_specials_img03.jpg" alt="crispys meal"/>
+            <h4 class="reveal">Heirloom beets Salad </h4>
+            <h2 class="reveal">$12</h2>
+            <p class="reveal">Heirloom beets add an unbelievably ﬂavorful and robust</p>
+
+            <img class="reveal" src="images/rest/fv_specials_img04.jpg" alt="crispys meal"/>
+            <h4 class="reveal">Mostarda Lamb</h4>
+            <h2 class="reveal">$19</h2>
+            <p class="reveal">housemade mortadella, and pickled blue hubbard squash</p>
+        </section>
+        
+        <!--reservations-->
+        <section class="reservations">
+            <h3>Reservations</h3>
+            <h2 class="reveal hotline">(289) 222-7455</h2>
+            <img class="reveal" src="images/rest/fv_reservation.jpg" alt = "reservations"/>
+            <h2 class="reveal">Online Reservations </h2>
+            
+            <form class="reveal">
+                <p>* required</p>
+                <p>
+                    <img class="icons" src="images/icons/name_icon.svg" alt="phone icon"/>
+                    <label for="name">Name<span>*</span></label>
+                    <input id="name"  name="name" placeholder="First and Last name" type="text"/>
+                </p>
+
+                <p>
+                    <img class="icons" src="images/icons/phone_icon.svg" alt="phone icon"/>
+                    <label for="phone">Phone<span>*</span></label>
+                    <input id="phone"  name="phone" placeholder="(123) 345-6789" type="tel"/>
+                </p>
+
+                <p>
+                    <img class="icons" src="images/icons/date_icon.svg" alt="date icon"/>
+                    <label for="date">Date<span>*</span></label>
+                    <input id="date"  name="date" placeholder="yyyy-mm-dd" type="date"/>
+                </p>
+
+                <p>
+                    <img class="icons" src="images/icons/time_icon.svg" alt="time icon"/>
+                    <label for="time">Time<span>*</span></label>
+                    <select id="time" name="time">
+                            <option>Selection a time...</option>
+                            <option value="12:00 pm">12:00 pm</option>
+                            <option value="1:00 pm">1:00 pm</option>
+                            <option value="2:00 pm">2:00 pm</option>
+                            <option value="3:00 pm">3:00 pm</option>
+                            <option value="4:00 pm">4:00 pm</option>
+                            <option value="5:00 pm">5:00 pm</option>
+                            <option value="6:00 pm">6:00 pm</option>
+                            <option value="7:00 pm">7:00 pm</option>
+                            <option value="8:00 pm">8:00 pm</option>
+                            <option value="9:00 pm">9:00 pm</option>
+                    </select>
+
+                </p>
+                <p>
+                    <img class="icons" src="images/icons/people_icon.svg" alt="guests icon"/>
+                    <label for="guests">Guests<span>*</span></label>
+                    <select id="guests" name="guests">
+                        <option>Select the number of guests...</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value ="other">other</option>
+                    </select>
+                </p>
+                <p>
+                    <img class="icons" src="images/icons/email_icon.svg" alt="email icon"/>
+                    <label>Email</label>
+                    <input id="email" name="email" placeholder="email@gmail.com" type="email">
+                </p>
+
+                <p>
+                    <label class="requestlabel">Special Resquests</label>
+                    <textarea id="requests" name="requests" rows="4"></textarea> 
+                </p>
+
+                <button class="reserve reveal" id="submit">Make a reservation</button>
+            </form>
+        </section>
+        
+        <footer>
+            <div class="aboutIcon" data-section=".about">
+                <img src="images/icons/about_icon.svg" alt="about" />
+                <p>About</p>
+            </div>
+
+            <div class="specialsIcon" data-section=".specials">
+                <img src="images/icons/specials_icon.svg" alt="specials" />
+                <p>Specials</p>
+            </div>
+            
+            <div class="reservationsIcon" data-section=".reservations">
+                <img src="images/icons/reservation_icon.svg" alt="reservations" />
+                <p>Reservations</p>
+            </div>
+        </footer>
+    </main>
+    
+    <script>
+        // hide all main elements above the selected index in the ()
+        // comment out when running animtion scripts
+        // 0=menu, 1=splash, 2=landing, 3=rest1, 4=rest2, 5=rest3
+        $("main:gt(2)").hide();
+        
+        // hide all section elements (in the selected restaurant/main screen)
+        // above the selected index in the ()
+        // comment out when running animtion scripts
+        // 0=ABOUT, 1=MENU, 2=SPECIALS, 3=RESERVATION
+        $("#rest1 section:gt(0)").hide();
+    </script>
+    
+    <!-- link to main js file -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
